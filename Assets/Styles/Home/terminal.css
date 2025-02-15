@@ -1,0 +1,49 @@
+/* Terminal */
+#terminal {
+    width: 30vw; /* Wider terminal */
+    height: 30vh; /* Fixed height */
+    max-width: 900px; /* Prevent it from being too wide */
+    border: 2px solid #00ff00;
+    padding: 20px;
+    background-color: black;
+    color: #00ff00;
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column; /* Stack output and input vertically */
+    justify-content: flex-start;
+    align-items: flex-start; /* Aligns the content to the left */
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Terminal output */
+#output {
+    white-space: pre-wrap;
+    width: 100%;
+    text-align: left; /* Align text to the left */
+}
+
+/* The input area will be placed directly below the output */
+#input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2px; /* Space between output and input */
+}
+
+/* Input field styling */
+#input input {
+    width: 100%;
+    border: none;
+    background: transparent; /* Makes input blend with terminal */
+    color: #00ff00;
+    font-size: 16px;
+    outline: none;
+    font-family: "Courier New", monospace;
+    padding: 5px;
+}
+
+/* Command prompt symbol styling */
+.prompt {
+    margin-right: 10px;
+}

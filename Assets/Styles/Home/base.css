@@ -1,0 +1,14 @@
+/* General Styles */
+body {
+    font-family: "Courier New", monospace;
+    background-color: black;
+    color: #00ff00; /* Green text like a terminal */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+

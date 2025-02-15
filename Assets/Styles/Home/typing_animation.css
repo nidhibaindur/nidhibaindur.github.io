@@ -1,0 +1,30 @@
+/* Big Typing Animation */
+.typing-text {
+    font-size: 3rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #00ff00;
+    width: fit-content;
+    animation: typing 2s steps(12) forwards, blink 0.8s;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: fit-content;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

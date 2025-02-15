@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Terminal</title>
+    <link rel="stylesheet" href="assets/styles/home/reset.css">
+    <link rel="stylesheet" href="assets/styles/home/base.css">
+    <link rel="stylesheet" href="assets/styles/home/footer.css">
+    <link rel="stylesheet" href="assets/styles/home/header.css">
+    <link rel="stylesheet" href="assets/styles/home/terminal.css">
+    <link rel="stylesheet" href="assets/styles/home/theme.css">
+    <link rel="stylesheet" href="assets/styles/home/typing_animation.css">
+    <link rel="stylesheet" href="assets/styles/DinoGame/dino.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Experience</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="typing-container">
+        <div class="typing-text">Hello, World!</div>
+        <div class="subtitle">Welcome to Nidhi's world</div>
+    </div>
+
+    <main>
+        <div id="terminal">
+            <div id="output"></div>
+            <div id="input">
+                <span class="prompt">></span> <input type="text" id="commandInput" autofocus />
+            </div>
+        </div>
+    </main>
+
+    <div id="game-container">
+        <img id="dino" src="Assets/Styles/DinoGame/nidhi_icon.png" alt="Dino" />
+        <div id="obstacle" class="obstacle"></div>
+    </div>
+    
+
+    <!-- <footer>
+        <p>&copy; 2025 Your Name</p>
+    </footer> -->
+
+    <script src="assets/scripts/terminal.js"></script>
+    <script src="assets/scripts/themeToggle.js"></script>
+    <script src="assets/scripts/dinoGame.js"></script>
+</body>
+</html>

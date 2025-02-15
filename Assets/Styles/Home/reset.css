@@ -1,0 +1,7 @@
+/* reset.css */
+/* file will contain the basic reset styles to ensure consistency across browsers. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
