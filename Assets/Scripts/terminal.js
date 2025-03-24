@@ -4,10 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const outputDiv = document.getElementById("output");
 
     const commands = {
-        about: "Hi, I'm Nidhi Baindur! I'm a Software Engineer and Computational Mathematician. I love solving complex problems using code and mathematics.",
+        about: "Hi, I'm Nidhi! I'm a Software Engineer by trade and a computational mathematician by study.  I love solving complex problems using code and mathematics.",
         portfolio: "Check out my portfolio: [portfolio link here]. Projects I’ve worked on include machine learning models, web apps, and algorithm visualizations.",
-        contact: "You can reach me at: yourname@email.com",
-        help: "Available commands: about, portfolio, contact, clear",
+        contact: "You can reach me at: nidhibaindur@outlook.com",
+        socialmedia: "My linkedin is Nidhi Baindur",
+        funfact: "My favoutrite actor is Shah Rukh Khan :)",
         clear: "" // Will handle separately
     };
 

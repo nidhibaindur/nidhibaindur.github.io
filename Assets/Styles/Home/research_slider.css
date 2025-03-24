@@ -1,0 +1,58 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Research Section Styling */
+#research-section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+}
+
+/* Research Container (holds all cards) */
+.research-container {
+    display: flex;
+    flex-direction: column; /* Stack the cards vertically */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Cards */
+.card {
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Optional: Add some card styling to make the effect more noticeable */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for other sections (terminal, etc.) */
+#terminal-section {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
