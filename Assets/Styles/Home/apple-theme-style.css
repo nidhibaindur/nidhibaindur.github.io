@@ -313,3 +313,31 @@ header a:hover::after {
     line-height: 1.6;
     padding-top: 10px;
 }
+.dino-game-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    background: #fff;
+  }
+  
+  #game {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+
+  #toggleXray {
+    background: #f5f5f7;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  #toggleXray:hover {
+    background: #eaeaea;
+  }
+  
+  
