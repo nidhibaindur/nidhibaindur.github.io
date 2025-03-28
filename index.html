@@ -3,59 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Terminal</title>
-    <link rel="stylesheet" href="Assets/Styles/Home/reset.css">
-    <link rel="stylesheet" href="Assets/Styles/Home/base.css">
-    <link rel="stylesheet" href="Assets/Styles/Home/footer.css">
-    <link rel="stylesheet" href="Assets/Styles/Home/header.css">
-    <link rel="stylesheet" href="Assets/Styles/Home/terminal.css">
-    <link rel="stylesheet" href="Assets/Styles/Home/theme.css">
-    <link rel="stylesheet" href="Assets/Styles/Home/typing_animation.css">
-    <link rel="stylesheet" href="Assets/Styles/DinoGame/dino.css">
-    <link rel="stylesheet" href="Assets/Styles/Home/research_slider.css">
+    <title>Apple-Inspired Infinite Scroll</title>
+    <link rel="stylesheet" href="Assets/Styles/Home/apple-theme-style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Experience</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="Assets/Files/Baindur_Nidhi_Resume_March25.pdf" target="_blank">Resume</a>
+        <div class="memoji">
+            <img src="Assets/Images/nidhi_memoji_1.png" alt="Nidhi Memoji 1">
+            <img src="Assets/Images/nidhi_memoji_2.png" alt="Nidhi Memoji 2">
+        </div>
     </header>
-
-    <div class="theme-toggle">
-        <label class="switch">
-            <input type="checkbox" id="themeToggle">
-            <span class="slider round"></span>
-        </label>
+    <div class="container">
+        <div class="section" id="about" style="background: #ffffff;">
+            <div class="intro">
+                <span class="large">I'm Nidhi</span>
+                <span class="medium">a Software Engineer</span>
+                <span class="small">based in Dallas</span>
+            </div>
+        </div>
+        <div class="bento-container">
+            <a href="project1.html" class="bento-box tall">
+              <img src="Assets/Images/project1.jpeg">
+              <div class="arrow-overlay">
+                <img src="Assets/Images/right_arrow.png" alt="Arrow">
+              </div>
+              <div class="bento-content">
+                <div class="bento-title">Ecolab Prep N Print</div>
+                <div class="bento-skills">HTML, CSS, JavaScript</div>
+              </div>
+            </a>
+            <a href="project2.html" class="bento-box medium shift-up">
+              <img src="Assets/Images/climate_networks.gif">
+              <div class="arrow-overlay">
+                <img src="Assets/Images/right_arrow.png" alt="Arrow">
+              </div>
+              <div class="bento-content">
+                <div class="bento-title">ENSO Prediction using ML</div>
+                <div class="bento-skills">React, Node.js</div>
+              </div>
+            </a>
+            <a href="project3.html" class="bento-box medium">
+              <img src="Assets/Images/project4.jpeg">
+              <div class="arrow-overlay">
+                <img src="Assets/Images/right_arrow.png" alt="Arrow">
+              </div>
+              <div class="bento-content">
+                <div class="bento-title">School Action Team </div>
+                <div class="bento-skills">Python, Flask</div>
+              </div>
+            </a>
+            <a href="project4.html" class="bento-box tall">
+              <img src="Assets/Images/project3.jpeg">
+              <div class="arrow-overlay">
+                <img src="Assets/Images/right_arrow.png" alt="Arrow">
+              </div>
+              <div class="bento-content">
+                <div class="bento-title">Cryptocurrencies and Hedging</div>
+                <div class="bento-skills">Swift, iOS</div>
+              </div>
+            </a>
+          </div>
+        <div class="section" id="about" style="background: #ffffff;"></div>
+        <div class="container">
+            <div class="terminal-section">
+              <div class="mac-window">
+                <div class="mac-controls">
+                  <div class="red"></div>
+                  <div class="yellow"></div>
+                  <div class="green"></div>
+                </div>
+                <div id="terminal">
+                  <div id="output"></div>
+                  <input id="commandInput" type="text" placeholder="Type a command and hit enter...">
+                </div>
+              </div>
+              <div class="terminal-text">
+                If you would rather use the terminal, you can do that here. Type help to find a list of available commands.
+              </div>
+            </div>
+          </div>
     </div>
 
-    <section id="typing-section">
-        <div class="typing-container">
-            <div class="typing-text">Hello, World!</div>
-            <div class="subtitle">Welcome to Nidhi's world.</div>
-        </div>
-    </section>
-
-    <section id="terminal">
-            <div id="output"></div>
-            <div id="input">
-                <span class="prompt">></span> <input type="text" id="commandInput" autofocus />
-            </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Nidhi Baindur</p>
-    </footer>
-
-    <script src="assets/Scripts/researchSlider.js"></script>
-    <script src="assets/Scripts/terminal.js"></script>
-    <script src="assets/Scripts/themeToggle.js"></script>
-    <script src="assets/DinoGame/dinoGame.js"></script>
-
+    <script src="Assets/Scripts/terminal.js"></script>
 </body>
 </html>
