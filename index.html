@@ -1,98 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nidhi Baindur</title>
-    <link rel="stylesheet" href="Assets/Styles/Home/apple-theme-style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nidhi Baindur</title>
+  <link rel="stylesheet" href="Assets/Styles/Home/apple-theme-style.css">
 </head>
 <body>
-    <header>
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        <a href="Assets/Files/Baindur_Nidhi_Resume_March25.pdf" target="_blank">Resume</a>
-        <div class="memoji">
-            <img src="Assets/Images/nidhi_memoji_1.png" alt="Nidhi Memoji 1">
-            <img src="Assets/Images/nidhi_memoji_2.png" alt="Nidhi Memoji 2">
-        </div>
-    </header>
-    <div class="container">
-        <div class="section" id="about" style="background: #ffffff;">
-            <div class="intro">
-                <span class="large">I'm Nidhi</span>
-                <span class="medium">a Software Engineer</span>
-                <span class="small">based in Dallas</span>
-            </div>
-        </div>
-        <div class="bento-container">
-            <a href="project1.html" class="bento-box tall">
-              <img src="Assets/Images/project1.jpeg">
-              <div class="arrow-overlay">
-                <img src="Assets/Images/right_arrow.png" alt="Arrow">
-              </div>
-              <div class="bento-content">
-                <div class="bento-title">Ecolab Prep N Print</div>
-                <div class="bento-skills">HTML, CSS, JavaScript</div>
-              </div>
-            </a>
-            <a href="project2.html" class="bento-box medium shift-up">
-              <img src="Assets/Images/climate_networks.gif">
-              <div class="arrow-overlay">
-                <img src="Assets/Images/right_arrow.png" alt="Arrow">
-              </div>
-              <div class="bento-content">
-                <div class="bento-title">ENSO Prediction using ML</div>
-                <div class="bento-skills">React, Node.js</div>
-              </div>
-            </a>
-            <a href="project3.html" class="bento-box medium">
-              <img src="Assets/Images/project4.jpeg">
-              <div class="arrow-overlay">
-                <img src="Assets/Images/right_arrow.png" alt="Arrow">
-              </div>
-              <div class="bento-content">
-                <div class="bento-title">School Action Team </div>
-                <div class="bento-skills">Python, Flask</div>
-              </div>
-            </a>
-            <a href="project4.html" class="bento-box tall">
-              <img src="Assets/Images/project3.jpeg">
-              <div class="arrow-overlay">
-                <img src="Assets/Images/right_arrow.png" alt="Arrow">
-              </div>
-              <div class="bento-content">
-                <div class="bento-title">Cryptocurrencies and Hedging</div>
-                <div class="bento-skills">Swift, iOS</div>
-              </div>
-            </a>
-          </div>
-        <div class="section" id="about" style="background: #ffffff;"></div>
-        <div class="container">
-            <div class="terminal-section">
-              <div class="mac-window">
-                <div class="mac-controls">
-                  <div class="red"></div>
-                  <div class="yellow"></div>
-                  <div class="green"></div>
-                </div>
-                <div id="terminal">
-                  <div id="output"></div>
-                  <input id="commandInput" type="text" placeholder="Type a command and hit enter...">
-                </div>
-              </div>
-              <div class="terminal-text">
-                If you would rather use the terminal, you can do that here. Type help to find a list of available commands.
-              </div>
-            </div>
-          </div>
+  <header>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="Assets/Files/Baindur_Nidhi_Resume_March25.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+    <div class="memoji">
+      <img src="Assets/Images/nidhi_memoji_1.png" alt="Nidhi Memoji 1">
+      <img src="Assets/Images/nidhi_memoji_2.png" alt="Nidhi Memoji 2">
     </div>
-    <div class="dino-game-section" style="position: relative;">
-        <button id="toggleXray" style="position: absolute; top: 20px; left: 20px; z-index: 10;">X-Ray Vision</button>
-        <canvas id="game" width="800" height="250"></canvas>
-      </div>
+  </header>
 
-    <script src="Assets/Scripts/terminal.js"></script>
-    <script src="Assets/Scripts/nidhiDino.js"></script>
+  <main>
+    <section id="about" class="intro">
+      <h1>I'm <em>Nidhi</em></h1>
+      <p class="role">a Software Engineer</p>
+      <p class="location">based in Dallas</p>
+    </section>
+
+    <!-- index.html: wrap your 4 bento-boxes into two column containers -->
+<section id="work" class="work-section">
+  <h2>Featured Projects</h2>
+  <div class="bento-container">
+    <!-- Left column: two squares -->
+    <div class="bento-column bento-column--left">
+      <a href="project1.html" class="bento-box">
+        <figure><img src="Assets/Images/project1.jpeg" alt="Ecolab Prep N Print"></figure>
+        <div class="overlay"><img src="Assets/Images/right_arrow.png" alt="View project"></div>
+      </a>
+
+      <a href="project2.html" class="bento-box">
+        <figure><img src="Assets/Images/climate_networks.gif" alt="ENSO Prediction"></figure>
+        <div class="overlay"><img src="Assets/Images/right_arrow.png" alt="View project"></div>
+      </a>
+    </div>
+
+    <!-- Right column: two wide rectangles -->
+    <div class="bento-column bento-column--right">
+      <a href="project3.html" class="bento-box">
+        <figure><img src="Assets/Images/project4.jpeg"></figure>
+        <div class="overlay"><img src="Assets/Images/right_arrow.png" alt="View project"></div>
+      </a>
+
+      <a href="project4.html" class="bento-box">
+        <figure><img src="Assets/Images/project3.jpeg" alt="Cryptocurrencies & Hedging"></figure>
+        <div class="overlay"><img src="Assets/Images/right_arrow.png" alt="View project"></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- Terminal Section -->
+    <section class="terminal-section">
+      <div class="mac-window">
+        <div class="mac-controls">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+        <div id="terminal">
+          <div id="output"></div>
+          <input id="commandInput" type="text" placeholder="Type a command and hit enter...">
+        </div>
+      </div>
+      <div class="terminal-text">
+        If you would rather use the terminal, you can do that here. Type <code>help</code> to see commands.
+      </div>
+    </section>
+
+    <!-- Dino Game Section -->
+    <section class="dino-game-section">
+      <button id="toggleXray">X-Ray Vision</button>
+      <canvas id="game" width="800" height="250"></canvas>
+    </section>
+  </main>
+
+  <script src="Assets/Scripts/terminal.js"></script>
+  <script src="Assets/Scripts/nidhiDino.js"></script>
 </body>
 </html>
